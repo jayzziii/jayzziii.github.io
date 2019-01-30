@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.000em;
+}
+
+body {
+  padding: 2.500em;
+  font-family: 'Poppins', cursive;
+}
+
+.name-tag {
+  width: 80%;
+  height: 43.000em;
+  margin: auto;
+  border-radius: 0.667em;
+  background-color: #EE0000;
+  text-align: center;
+  filter: drop-shadow(0 0 0.750rem rgb(177, 0, 24));
+}
+
+.name__intro {
+  padding: 1.900em 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.name__intro h1 {
+  font-size: 6.250em;
+}
+
+.name__intro p {
+  padding-bottom: 0.667em;
+  font-size: 3.500em;
+  text-transform: capitalize;
+}
+
+.name__info {
+  width: 98%;
+  margin: 0 auto;
+  padding: 5.000em 0;
+  border-radius: 0.667em;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.name-given {
+  padding-bottom: 0.250em;
+  font-size: 6.250em;
+}
+
+.name-social {
+  list-style-type: none;
+}
+
+.name-social li {
+  display: inline-block;
+}
+
+.name-social a {
+  margin: 0 0.333em;
+  color: #000;
+  font-size: 3.667em;
+}
+
+.name-social i {
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.name-social .fa-linkedin:hover {
+  color: #007bb5;
+}
+
+.name-social .fa-github:hover {
+  color: #333;
+}
+
+.name-social .fa-behance-square:hover {
+  color: #131418;
+}
+
+.name-social .fa-instagram:hover {
+  color: #4c5fd7;
+}
+
+@media (max-width: 767px) {
+  .name__intro h1 {
+    font-size: 300%;
+  }
+
+  .name__intro p {
+    font-size: 150%;
+    padding-bottom: 2.250em;
+  }
+
+  .name__info {
+    width: 97%;
+    padding: 7.000em 0;
+  }
+
+  .name-given {
+    padding-bottom: 0.5em;
+    font-size: 400%;
+  }
+
+  .name-social a {
+    margin: 0 1.250em;
+  }
+}
+
+@media (max-width: 620px) {
+  .name__info {
+    padding: 2.000em 0;
+  }
+
+  .name__intro p {
+    padding-bottom: 1.875em;
+  }
+
+  .name-social a {
+    margin: 0 2.000em;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    padding: 1.500em;
+  }
+
+  .name-tag {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .name__intro p {
+    padding-bottom: 2.000em;
+  }
+
+  .name-social a {
+    margin: 0 1.500em;
+  }
+}
+
+@media (max-width: 320px) {
+  .name-social a {
+    margin: 0 1.000em;
+  }
+}

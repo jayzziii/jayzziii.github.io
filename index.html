@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Julian Cris Alvarez">
+  <title>Julian Cris Alvarez | Multi-tasking Beginner.</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="name-tag">
+    <div class="name__intro">
+      <h1>hello</h1>
+      <p>my name is</p>
+
+      <div class="name__info">
+        <h2 class="name-given">Julian Cris</h2>
+        <ul class="name-social">
+          <li><a href="https://www.linkedin.com/in/alvarezjc/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/jayzziii" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.behance.net/jayzziii" target="_blank"><i class="fab fa-behance-square"></i></a></li>
+          <li><a href="https://www.instagram.com/jayzziii/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script lang="text/javascript" src="js/main.js"></script>
+<script lang="text/javascript">
+  let changeName = window.document.querySelector('.name-given');
+
+  if (window.screen.width >= 320) {
+    changeName.innerHTML = 'JC';
+  }
+  if (window.innerWidth >= 531) {
+    changeName.innerHTML = 'Julian Cris';
+  }
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 320 && window.innerWidth <= 530) {
+      changeName.innerHTML = 'JC';
+    } else if (window.innerWidth >= 531) {
+      changeName.innerHTML = 'Julian Cris';
+    }
+  });
+</script>
+
+</html>
