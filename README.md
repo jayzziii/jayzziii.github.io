@@ -1,5 +1,5 @@
-# jayzziii.github.io
+# Personal Portfolio
 
-The personal permanent portfolio of the user.
+The permanent personal portfolio of the user.
 Please take a look:
 https://jayzziii.github.io/
