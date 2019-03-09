@@ -30,7 +30,7 @@ body {
 }
 
 .name__intro p {
-  padding-bottom: 0.667em;
+  padding-bottom: 0.5625em;
   font-size: 3.500em;
   text-transform: capitalize;
 }
