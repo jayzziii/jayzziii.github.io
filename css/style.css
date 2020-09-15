@@ -1,53 +1,54 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 1.000em;
+  font-size: 16px;
 }
 
 body {
-  padding: 2.500em;
+  /* padding: 2.500em; */
   font-family: 'Poppins', cursive;
 }
 
 .name-tag {
   width: 80%;
-  height: 43.000em;
-  margin: auto;
-  border-radius: 0.667em;
+  height: 688px;
+  margin: 10px auto auto;
+  border-radius: 10px;
   background-color: #EE0000;
   text-align: center;
-  filter: drop-shadow(0 0 0.750rem rgb(177, 0, 24));
+  filter: drop-shadow(0 0 12px rgb(177, 0, 24));
 }
 
 .name__intro {
-  padding: 1.900em 0;
+  padding: 30px 0;
   color: #fff;
   text-transform: uppercase;
 }
 
 .name__intro h1 {
-  font-size: 6.250em;
+  font-size: 100px;
+  line-height: 1.3;
 }
 
 .name__intro p {
-  padding-bottom: 0.5000em;
-  font-size: 3.500em;
+  padding-bottom: 8px;
+  font-size: 3.5rem;
   text-transform: capitalize;
 }
 
 .name__info {
   width: 98%;
   margin: 0 auto;
-  padding: 5.000em 0;
-  border-radius: 0.667em;
+  padding: 80px 0;
+  border-radius: 10px;
   background-color: #fff;
   color: #000;
   font-family: 'Gochi Hand', cursive;
 }
 
 .name-given {
-  padding-bottom: 0.250em;
-  font-size: 6.250em;
+  padding-bottom: 25px;
+  font-size: 6.25rem;
 }
 
 .name-social {
@@ -59,12 +60,12 @@ body {
 }
 
 .name-social a {
-  margin: 0 0.333em;
-  color: #000;
-  font-size: 3.667em;
+  margin: 0 20px;
 }
 
 .name-social i {
+  color: #000;
+  font-size: 3.625rem;
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
@@ -99,36 +100,36 @@ body {
 
   .name__info {
     width: 97%;
-    padding: 7.000em 0;
+    padding: 112px 0;
   }
 
   .name-given {
-    padding-bottom: 0.5em;
+    padding-bottom: 8px;
     font-size: 400%;
   }
 
   .name-social a {
-    margin: 0 1.250em;
+    margin: 0 20px;
   }
 }
 
 @media (max-width: 620px) {
   .name__info {
-    padding: 2.000em 0;
+    padding: 32px 0;
   }
 
   .name__intro p {
-    padding-bottom: 2.675em;
+    padding-bottom: 42px;
   }
 
   .name-social a {
-    margin: 0 2.000em;
+    margin: 0 32px;
   }
 }
 
 @media (max-width: 530px) {
   body {
-    padding: 1.500em;
+    padding: 24px;
   }
 
   .name-tag {
@@ -138,16 +139,16 @@ body {
 
 @media (max-width: 475px) {
   .name__intro p {
-    padding-bottom: 2.000em;
+    padding-bottom: 32px;
   }
 
   .name-social a {
-    margin: 0 1.500em;
+    margin: 0 24px;
   }
 }
 
 @media (max-width: 320px) {
   .name-social a {
-    margin: 0 1.000em;
+    margin: 0 16px;
   }
 }

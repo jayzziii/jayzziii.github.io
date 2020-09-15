@@ -5,13 +5,12 @@ document.addEventListener('keydown', function() {
     return false;
   } else if (event.ctrlKey && event.keyCode === 85) {
     return false;
-  }
-}, false);
+  }}, false);
 
   if (document.addEventListener) {
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault();
-    }, false);
+    });
   } else {
     document.attachEvent('oncontextmenu', function() {
       window.event.returnValue = false;
