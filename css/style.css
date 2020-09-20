@@ -19,11 +19,11 @@ header {
   display: grid;
   align-items: center;
 
-	position: relative;
+  position: relative;
+  width: 100%;
+	min-height: 560px;
   margin: 0 auto;
   padding: 60px 0 0;
-	min-height: 560px;
-	width: 100%;
 }
 
 .bg {
@@ -50,10 +50,14 @@ header {
 /* Trigger Button */
 button.trigger {
   display: block;
-	position: fixed;
-	bottom: 25px;
-  width: 100%;
-	z-index: 5000;
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  width: 80%;
+  z-index: 5000;
+  margin-left: auto;
+  margin-right: auto;
 	padding: 0;
   background: transparent;
   border: none;
@@ -102,7 +106,7 @@ button.trigger:hover {
 }
 
 .intro-effect-push header {
-	position: absolute;
+	position: fixed;
 	z-index: 1500;
 }
 
@@ -149,8 +153,7 @@ button.trigger:hover {
 	transition-delay: 0.6s;
 }
 
-/* INTRO */
-
+/* HEADER CONTINUATION */
 .name-tag {
   width: 80%;
   margin: auto;
@@ -271,12 +274,25 @@ button.trigger:hover {
     padding-bottom: 15px;
   }
 
+  .name__info {
+    padding: 65px 0;
+  }
+
   .name-social a {
     margin: 0 5px;
   }
 }
 
 @media (max-width: 320px) {
+  html,
+  body {
+    word-break: break-word;
+  }
+
+  .resume section {
+    margin-bottom: 30px;
+  }
+
   .name__intro h1 {
     font-size: 315%;
   }
@@ -303,6 +319,10 @@ button.trigger:hover {
 
   .name-social a {
     margin: 0 1%;
+  }
+
+  button.trigger {
+    font-size: 88%;
   }
 }
 
@@ -430,6 +450,28 @@ button.trigger:hover {
   
   .resume section {
     padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .resume {
+    display: block;
+  }
+
+  .resume h1 {
+    font-size: 200%;
+  }
+
+  .resume h3 {
+    font-size: 155%;
+  }
+
+  .section.name {
+    margin-bottom: 30px;
+  }
+
+  .photo img {
+    width: 100%;
   }
 }
 
@@ -595,5 +637,23 @@ button.trigger:hover {
     top: 60%;
     bottom: unset;
     left: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio_container h2 {
+    font-size: 210%;
+  }
+
+  .gallery.grid figure a {
+    width: 70%;
+  }
+
+  .gallery.grid .btn-dark {
+    top: 69%;
+  }
+
+  .gallery.grid .btn-light {
+    top: 33%;
   }
 }
