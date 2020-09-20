@@ -35,3 +35,10 @@ document.addEventListener('keydown', function() {
       window.event.returnValue = false;
   });
 }
+
+/* PORTFOLIO */
+AOS.init({
+  duration: 500,
+  easing: 'linear',
+  offset: 120
+});
