@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Gochi+Hand&family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Gochi+Hand&family=Poppins:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
-html, body, .container, header {
-	height: 100%;
+html,
+body,
+.container,
+header {
+  height: 100%;
 }
 
 body {
@@ -21,30 +24,30 @@ header {
 
   position: relative;
   width: 100%;
-	min-height: 560px;
+  min-height: 560px;
   margin: 0 auto;
   padding: 60px 0 0;
 }
 
 .bg {
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	right: 0;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   background: #fff;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .bg img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	min-width: 100%;
-	min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* Trigger Button */
@@ -58,26 +61,26 @@ button.trigger {
   z-index: 5000;
   margin-left: auto;
   margin-right: auto;
-	padding: 0;
+  padding: 0;
   background: transparent;
   border: none;
   color: #000;
-  font-family: 'Poppins', sans-serif;
-	font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   cursor: pointer;
-  -webkit-text-stroke: 1px #EE0000;
+  -webkit-text-stroke: 1px #ee0000;
 }
 
 .container:not(.notrans) button.trigger {
-	-webkit-transition: opacity 0.3s 0.5s;
-	transition: opacity 0.3s 0.5s;
+  -webkit-transition: opacity 0.3s 0.5s;
+  transition: opacity 0.3s 0.5s;
 }
 
 .container.modify:not(.notrans) button.trigger {
-	opacity: 0;
-	pointer-events: none;
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 button.trigger:focus {
@@ -85,72 +88,72 @@ button.trigger:focus {
 }
 
 button.trigger:hover {
-  color: #EE0000;
+  color: #ee0000;
 }
 
 /* Push */
 .intro-effect-push:not(.notrans) header,
 .intro-effect-push:not(.notrans) > .name-tag,
 .intro-effect-push:not(.notrans) .resume > div {
-	-webkit-transition-property: opacity, -webkit-transform;
-	transition-property: opacity, transform;
-	-webkit-transition-duration: 1s;
-	transition-duration: 1s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .intro-effect-push:not(.notrans) header {
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	-webkit-transition-duration: 1.2s;
-	transition-duration: 1.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition-duration: 1.2s;
+  transition-duration: 1.2s;
 }
 
 .intro-effect-push header {
-	position: fixed;
-	z-index: 1500;
+  position: fixed;
+  z-index: 1500;
 }
 
 .intro-effect-push > .name-tag {
-	position: relative;
-	top: auto;
-	left: auto;
-	padding: 6em 1em 2em;
+  position: relative;
+  top: auto;
+  left: auto;
+  padding: 6em 1em 2em;
 }
 
 .intro-effect-push .resume > div {
-	margin-top: 50px;
-	color: #b2b2c0;
+  margin-top: 50px;
+  color: #b2b2c0;
 }
 
 .intro-effect-push > .name-tag,
 .intro-effect-push .resume > div {
-	-webkit-transform: translateY(400px);
-	transform: translateY(400px);
-	opacity: 0;
+  -webkit-transform: translateY(400px);
+  transform: translateY(400px);
+  opacity: 0;
 }
 
 .intro-effect-push.modify > .name-tag,
 .intro-effect-push.modify .resume > div {
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .intro-effect-push.modify header {
-	opacity: 0;
-	-webkit-transform: translateY(-100%) scale(0.9);
-	transform: translateY(-100%) scale(0.9);
+  opacity: 0;
+  -webkit-transform: translateY(-100%) scale(0.9);
+  transform: translateY(-100%) scale(0.9);
 }
 
 /* Delays */
 .intro-effect-push.modify:not(.notrans) > .name-tag {
-	-webkit-transition-delay: 0.5s;
-	transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .intro-effect-push.modify:not(.notrans) .resume > div {
-	-webkit-transition-delay: 0.6s;
-	transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 /* HEADER CONTINUATION */
@@ -159,7 +162,7 @@ button.trigger:hover {
   margin: auto;
   margin-top: 0;
   border-radius: 10px;
-  background-color: #EE0000;
+  background-color: #ee0000;
   line-height: 1;
   text-align: center;
   filter: drop-shadow(0 0 12px rgb(177, 0, 24));
@@ -168,7 +171,7 @@ button.trigger:hover {
 .name__intro {
   padding: 25px 0 15px;
   color: #fff;
-  font-family: 'Poppins', cursive;
+  font-family: "Poppins", cursive;
   text-transform: uppercase;
 }
 
@@ -191,7 +194,7 @@ button.trigger:hover {
   border-radius: 10px;
   background-color: #fff;
   color: #000;
-  font-family: 'Gochi Hand', cursive;
+  font-family: "Gochi Hand", cursive;
 }
 
 .name-given {
@@ -437,17 +440,17 @@ button.trigger:hover {
   .resume {
     grid-template-columns: 1fr;
     grid-template-areas:
-      'photo'
-      'name'
-      'objective'
-      'work'
-      'skills'
-      'education';
+      "photo"
+      "name"
+      "objective"
+      "work"
+      "skills"
+      "education";
     row-gap: 10px;
 
     max-height: none;
   }
-  
+
   .resume section {
     padding: 0;
   }
@@ -481,7 +484,7 @@ button.trigger:hover {
   overflow: hidden;
   margin: auto;
   padding: 50px 0;
-  font-family: 'Eb Garamond', sans-serif;
+  font-family: "Eb Garamond", sans-serif;
 }
 
 .portfolio_container h2 {
@@ -497,7 +500,7 @@ button.trigger:hover {
   margin-bottom: 45px;
 }
 
-.gallery:nth-child(2n+1) {
+.gallery:nth-child(2n + 1) {
   float: left;
 }
 
@@ -523,42 +526,42 @@ button.trigger:hover {
 }
 
 .gallery.grid {
-	list-style: none;
-	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 .gallery.grid figure {
-	margin: 0;
+  margin: 0;
   position: relative;
 }
 
 .gallery.grid figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
   background: #2c3f52;
   border: 5px solid #000;
   color: #ed4e6e;
   height: 100%;
-	width: 100%;
+  width: 100%;
 }
 
 .gallery.grid figcaption a {
   display: inline-block;
   position: absolute;
   bottom: 0;
-	padding: 5px 10px;
-	border-radius: 2px;
+  padding: 5px 10px;
+  border-radius: 2px;
   text-align: center;
 }
 
 .gallery.grid figure img {
-	display: block;
+  display: block;
   position: relative;
   max-width: 100%;
   z-index: 10;
-	transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .gallery.grid figure:hover img {
@@ -598,7 +601,7 @@ button.trigger:hover {
   color: #fff;
 }
 
-.btn-dark:hover, 
+.btn-dark:hover,
 .btn-light:hover {
   background: #fff;
   color: #000;
@@ -612,7 +615,7 @@ button.trigger:hover {
   }
 
   .gallery.grid {
-		margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 }
 
