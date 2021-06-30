@@ -8,8 +8,8 @@
 
 html,
 body,
-.container,
-header {
+header,
+.container {
   height: 100%;
 }
 
@@ -68,7 +68,6 @@ button.trigger {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   cursor: pointer;
-  -webkit-text-stroke: 1px #ee0000;
 }
 
 .container:not(.notrans) button.trigger {
@@ -87,14 +86,10 @@ button.trigger:focus {
   outline: none;
 }
 
-button.trigger:hover {
-  color: #ee0000;
-}
-
 /* Push */
 .intro-effect-push:not(.notrans) header,
-.intro-effect-push:not(.notrans) > .name-tag,
-.intro-effect-push:not(.notrans) .resume > div {
+.intro-effect-push:not(.notrans)>.name-tag,
+.intro-effect-push:not(.notrans) .resume>div {
   -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
   -webkit-transition-duration: 1s;
@@ -113,27 +108,27 @@ button.trigger:hover {
   z-index: 1500;
 }
 
-.intro-effect-push > .name-tag {
+.intro-effect-push>.name-tag {
   position: relative;
   top: auto;
   left: auto;
   padding: 6em 1em 2em;
 }
 
-.intro-effect-push .resume > div {
+.intro-effect-push .resume>div {
   margin-top: 50px;
   color: #b2b2c0;
 }
 
-.intro-effect-push > .name-tag,
-.intro-effect-push .resume > div {
+.intro-effect-push>.name-tag,
+.intro-effect-push .resume>div {
   -webkit-transform: translateY(400px);
   transform: translateY(400px);
   opacity: 0;
 }
 
-.intro-effect-push.modify > .name-tag,
-.intro-effect-push.modify .resume > div {
+.intro-effect-push.modify>.name-tag,
+.intro-effect-push.modify .resume>div {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
@@ -146,12 +141,12 @@ button.trigger:hover {
 }
 
 /* Delays */
-.intro-effect-push.modify:not(.notrans) > .name-tag {
+.intro-effect-push.modify:not(.notrans)>.name-tag {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 
-.intro-effect-push.modify:not(.notrans) .resume > div {
+.intro-effect-push.modify:not(.notrans) .resume>div {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
@@ -241,7 +236,7 @@ button.trigger:hover {
 
 @media (max-width: 767px) {
   header {
-    padding: 30px 0;
+    padding: 25px 0;
   }
 
   .name__intro {
@@ -287,6 +282,7 @@ button.trigger:hover {
 }
 
 @media (max-width: 320px) {
+
   html,
   body {
     word-break: break-word;
@@ -332,8 +328,8 @@ button.trigger:hover {
 /* RESUME */
 .resume {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, 20%);
   grid-template-areas:
     "name photo"
     "work objective"
@@ -341,13 +337,12 @@ button.trigger:hover {
 
   width: 95%;
   max-width: 210mm;
-  max-height: 297mm;
+  height: auto;
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 .resume section {
-  padding: 25px;
+  padding: 2.2em;
 }
 
 .name {
@@ -424,16 +419,17 @@ button.trigger:hover {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-bottom: 15px;
 }
 
-.skills__list div > * {
+.skills__list div>* {
   font-size: 1.25rem;
 }
 
 .skills__list img {
-  width: 50px;
+  width: 100%;
+  max-width: 125px;
   padding-right: 25px;
+  transform: scale(50%);
 }
 
 @media (max-width: 768px) {
@@ -542,7 +538,6 @@ button.trigger:hover {
   padding: 20px;
   background: #2c3f52;
   border: 5px solid #000;
-  color: #ed4e6e;
   height: 100%;
   width: 100%;
 }
@@ -592,7 +587,7 @@ button.trigger:hover {
 .btn-light {
   left: 20px;
   background: #999;
-  color: #333;
+  color: #000;
 }
 
 .btn-dark {
@@ -608,6 +603,7 @@ button.trigger:hover {
 }
 
 @media (max-width: 768px) {
+
   .gallery,
   .gallery img,
   .gallery p {
