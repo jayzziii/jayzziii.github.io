@@ -283,15 +283,6 @@ button.trigger:focus {
 
 @media (max-width: 320px) {
 
-  html,
-  body {
-    word-break: break-word;
-  }
-
-  .resume section {
-    margin-bottom: 30px;
-  }
-
   .name__intro h1 {
     font-size: 315%;
   }
