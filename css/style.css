@@ -343,6 +343,7 @@ button.trigger:focus {
 
 .resume section {
   padding: 2.2em;
+  overflow: hidden;
 }
 
 .name {
