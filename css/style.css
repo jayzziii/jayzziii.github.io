@@ -434,7 +434,7 @@ button.trigger:focus {
       "work"
       "skills"
       "education";
-    row-gap: 10px;
+    /* row-gap: 10px; */
     max-height: none;
   }
 
@@ -452,7 +452,7 @@ button.trigger:focus {
     font-size: 155%;
   }
 
-  .section.name {
+  section.name {
     margin-bottom: 30px;
   }
 
