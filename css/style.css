@@ -476,6 +476,7 @@ button.trigger:focus {
 
 /* PORTFOLIO */
 .portfolio_container {
+  display: block;
   width: 80%;
   overflow: hidden;
   margin: auto;
