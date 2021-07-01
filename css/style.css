@@ -328,8 +328,8 @@ button.trigger:focus {
 /* RESUME */
 .resume {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: repeat(4, 20%);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, 25%);
   grid-template-areas:
     "name photo"
     "work objective"
@@ -433,7 +433,7 @@ button.trigger:focus {
 
 @media (max-width: 768px) {
   .resume {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
       "photo"
       "name"
