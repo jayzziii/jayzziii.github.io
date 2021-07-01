@@ -24,7 +24,7 @@ header {
 
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 560px;
   margin: 0 auto;
   padding: 60px 0 0;
 }
@@ -337,6 +337,7 @@ button.trigger:focus {
 
   width: 95%;
   max-width: 210mm;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -442,7 +443,6 @@ button.trigger:focus {
       "skills"
       "education";
     row-gap: 10px;
-
     max-height: none;
   }
 
