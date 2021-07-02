@@ -320,7 +320,7 @@ button.trigger:focus {
 .resume {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(3, 25%);
   grid-template-areas:
     "name photo"
     "work objective"
@@ -467,7 +467,7 @@ button.trigger:focus {
 /* PORTFOLIO */
 .portfolio_container {
   width: 80%;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: auto;
   padding: 50px 0;
   font-family: "Eb Garamond", sans-serif;
