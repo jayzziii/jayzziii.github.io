@@ -407,11 +407,11 @@ button.trigger:focus {
   grid-area: skills;
 }
 
-/* .skills__list div {
+.skills__list div {
   display: flex;
   justify-content: left;
   align-items: center;
-} */
+}
 
 .skills__list div>* {
   font-size: 1.25rem;
@@ -440,6 +440,10 @@ button.trigger:focus {
 
   .resume section {
     padding: 0;
+  }
+
+  .skills__list div {
+    flex: 1;
   }
 }
 
