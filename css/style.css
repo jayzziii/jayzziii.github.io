@@ -366,6 +366,7 @@ button.trigger:focus {
   padding-top: 30px;
 }
 
+.resume__body,
 .resume__body h3 {
   padding-bottom: 15px;
 }
