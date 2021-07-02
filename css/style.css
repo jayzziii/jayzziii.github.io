@@ -331,7 +331,6 @@ button.trigger:focus {
   width: 95%;
   max-width: 210mm;
   margin: 0 auto;
-  padding-top: 3em;
 }
 
 .resume section {
@@ -363,7 +362,7 @@ button.trigger:focus {
 }
 
 #contact__details {
-  padding-top: 30px;
+  padding: 25px 0;
 }
 
 .resume__body,
@@ -438,6 +437,7 @@ button.trigger:focus {
       "education";
     row-gap: 10px;
     /* max-height: none; */
+    padding: 1em;
   }
 
   .resume section {
@@ -460,10 +460,6 @@ button.trigger:focus {
 
   section.name {
     margin-bottom: 30px;
-  }
-
-  .photo img {
-    width: 100%;
   }
 }
 
