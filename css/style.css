@@ -333,7 +333,7 @@ button.trigger:focus {
 }
 
 .resume section {
-  padding: 2.2em;
+  /* padding: 2.2em; */
   overflow: clip;
 }
 
@@ -434,8 +434,8 @@ button.trigger:focus {
       "work"
       "skills"
       "education";
-    /* row-gap: 10px; */
-    max-height: none;
+    row-gap: 10px;
+    /* max-height: none; */
   }
 
   .resume section {
