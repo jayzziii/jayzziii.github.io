@@ -325,11 +325,12 @@ button.trigger:focus {
     "name photo"
     "work objective"
     "skills education";
+  gap: 2em;
 
   width: 95%;
   max-width: 210mm;
-  /* height: auto; */
   margin: 0 auto;
+  padding-top: 3em;
 }
 
 .resume section {
