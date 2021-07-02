@@ -319,13 +319,14 @@ button.trigger:focus {
 /* RESUME */
 .resume {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: repeat(3, 50%);
   grid-template-areas:
     "name photo"
     "work objective"
     "skills education";
   gap: 2em;
+  padding: 3em;
 
   width: 95%;
   max-width: 210mm;
@@ -469,8 +470,7 @@ button.trigger:focus {
 .portfolio_container {
   width: 80%;
   overflow: hidden;
-  margin: auto;
-  padding: 50px 0;
+  margin: 0 auto;
   font-family: "Eb Garamond", sans-serif;
 }
 
