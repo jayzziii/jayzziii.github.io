@@ -334,7 +334,7 @@ button.trigger:focus {
 
 .resume section {
   /* padding: 2.2em; */
-  overflow: hidden;
+  overflow: clip;
 }
 
 .name {
@@ -467,7 +467,7 @@ button.trigger:focus {
 /* PORTFOLIO */
 .portfolio_container {
   width: 80%;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: auto;
   padding: 50px 0;
   font-family: "Eb Garamond", sans-serif;
