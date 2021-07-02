@@ -334,7 +334,7 @@ button.trigger:focus {
 
 .resume section {
   /* padding: 2.2em; */
-  overflow: clip;
+  overflow: hidden;
 }
 
 .name {
@@ -364,7 +364,6 @@ button.trigger:focus {
   padding-top: 30px;
 }
 
-.resume__body,
 .resume__body h3 {
   padding-bottom: 15px;
 }
