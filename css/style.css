@@ -6,13 +6,6 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-header,
-.container {
-  height: 100%;
-}
-
 body {
   font-size: 16px;
 }
@@ -20,13 +13,13 @@ body {
 /* HEADER */
 header {
   display: grid;
-  align-items: center;
-
+  /* place-items: center; */
+  place-content: center;
   position: relative;
   width: 100%;
-  min-height: 560px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 60px 0 0;
+  /* padding: 3em auto 0; */
 }
 
 .bg {
@@ -51,22 +44,21 @@ header {
 }
 
 /* Trigger Button */
-button.trigger {
+/* button.trigger {
   display: block;
   position: fixed;
   right: 0;
-  bottom: 10px;
+  bottom: 5rem;
   left: 0;
-  width: 80%;
+  width: 90%;
   z-index: 5000;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 0;
   background: transparent;
   border: none;
   color: #000;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -84,7 +76,7 @@ button.trigger {
 
 button.trigger:focus {
   outline: none;
-}
+} */
 
 /* Push */
 .intro-effect-push:not(.notrans) header,
@@ -153,7 +145,6 @@ button.trigger:focus {
 
 /* HEADER CONTINUATION */
 .name-tag {
-  width: 80%;
   margin: auto;
   margin-top: 0;
   border-radius: 10px;
@@ -164,7 +155,7 @@ button.trigger:focus {
 }
 
 .name__intro {
-  padding: 25px 0 15px;
+  padding: 1em 0;
   color: #fff;
   font-family: "Poppins", cursive;
   text-transform: uppercase;
@@ -235,12 +226,12 @@ button.trigger:focus {
 }
 
 @media (max-width: 767px) {
-  header {
+  /* header {
     padding: 25px 0;
-  }
+  } */
 
   .name__intro {
-    padding: 15px 0;
+    padding: 1em;
   }
 
   .name__intro h1 {
@@ -254,7 +245,7 @@ button.trigger:focus {
 
   .name__info {
     width: 95%;
-    padding: 75px 0;
+    padding: 2em 0;
   }
 
   .name-given {
@@ -272,8 +263,9 @@ button.trigger:focus {
     padding-bottom: 15px;
   }
 
-  .name__info {
-    padding: 65px 0;
+  .name-social {
+    display: grid;
+    place-items: center;
   }
 
   .name-social a {
@@ -319,31 +311,18 @@ button.trigger:focus {
 /* RESUME */
 .resume {
   display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: repeat(3, 50%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "name photo"
     "work objective"
     "skills education";
+  place-items: center;
   gap: 2em;
-  padding: 3em;
-
-  width: 95%;
-  max-width: 210mm;
-  margin: 0 auto;
-}
-
-.resume section {
-  /* padding: 2.2em; */
-  overflow: hidden;
-}
-
-.name {
-  grid-area: name;
-  place-self: center;
-
-  font-weight: bold;
-  text-align: center;
+  padding: 2em;
+  width: 90%;
+  max-width: 60rem;
+  margin: auto;
 }
 
 .resume h1 {
@@ -361,17 +340,14 @@ button.trigger:focus {
   font-size: 1.25rem;
 }
 
-#contact__details {
-  padding: 25px 0;
-}
-
-.resume__body,
-.resume__body h3 {
-  padding-bottom: 15px;
-}
-
 .resume p {
   font-size: 1.0625rem;
+}
+
+.name {
+  grid-area: name;
+  font-weight: bold;
+  text-align: center;
 }
 
 .name h3 {
@@ -383,9 +359,18 @@ button.trigger:focus {
   font-size: 1.5625rem;
 }
 
+#contact__details {
+  padding: 25px 0;
+}
+
+.resume__body,
+.resume__body h3 {
+  padding-bottom: 15px;
+}
+
 .photo {
   grid-area: photo;
-  place-self: center;
+  text-align: center;
 }
 
 .photo img {
@@ -412,6 +397,8 @@ button.trigger:focus {
   display: flex;
   justify-content: left;
   align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
 }
 
 .skills__list div>* {
@@ -420,9 +407,9 @@ button.trigger:focus {
 
 .skills__list img {
   width: 100%;
-  max-width: 125px;
+  max-width: 100px;
+  height: auto;
   padding-right: 25px;
-  transform: scale(50%);
 }
 
 @media (max-width: 768px) {
@@ -436,7 +423,6 @@ button.trigger:focus {
       "skills"
       "education";
     row-gap: 10px;
-    /* max-height: none; */
     padding: 1em;
   }
 
