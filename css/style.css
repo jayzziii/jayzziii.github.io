@@ -274,7 +274,6 @@ button.trigger:focus {
 }
 
 @media (max-width: 320px) {
-
   .name__intro h1 {
     font-size: 315%;
   }
@@ -411,6 +410,10 @@ button.trigger:focus {
   height: auto;
   padding-right: 25px;
 }
+
+/* article.resume section:hover {
+  background-color: #007bb5;
+} */
 
 @media (max-width: 768px) {
   .resume {
