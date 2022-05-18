@@ -6,12 +6,17 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 2px solid hsl(0, 0%, 0%);
+}
+
 body {
   font-size: 16px;
 }
 
 /* HEADER */
 header {
+  display: -ms-grid;
   display: grid;
   /* place-items: center; */
   place-content: center;
@@ -184,11 +189,11 @@ button.trigger:focus {
 }
 
 .name-given {
-  padding-bottom: 15px;
   font-size: 6.25rem;
 }
 
 .name-social {
+  font-size: 0;
   list-style: none;
 }
 
@@ -197,7 +202,8 @@ button.trigger:focus {
 }
 
 .name-social a {
-  margin: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 .name-social i {
@@ -264,6 +270,7 @@ button.trigger:focus {
   }
 
   .name-social {
+    display: -ms-grid;
     display: grid;
     place-items: center;
   }
@@ -309,8 +316,10 @@ button.trigger:focus {
 
 /* RESUME */
 .resume {
+  display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  display: -ms-grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "name photo"
