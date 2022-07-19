@@ -160,7 +160,7 @@ button.trigger:focus {
 }
 
 .name__intro {
-  padding: 1em 0;
+  padding: 1em;
   color: hsl(0, 0%, 100%);
   font-family: "Poppins", cursive;
   text-transform: uppercase;
@@ -179,9 +179,8 @@ button.trigger:focus {
 }
 
 .name__info {
-  width: 95%;
   margin: auto;
-  padding: 2% 0;
+  padding: 2em;
   border-radius: 10px;
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 0%);
@@ -189,6 +188,7 @@ button.trigger:focus {
 }
 
 .name-given {
+  /* width: 100%; */
   font-size: 6.25rem;
 }
 
@@ -241,10 +241,6 @@ button.trigger:focus {
     height: min-content;
   }
 
-  .name__intro {
-    padding: 1em;
-  }
-
   .name__intro h1 {
     font-size: 440%;
   }
@@ -272,6 +268,10 @@ button.trigger:focus {
 
   .name__intro p {
     padding-bottom: 15px;
+  }
+
+  .name-given {
+    width: 100%;
   }
 
   .name-social {
