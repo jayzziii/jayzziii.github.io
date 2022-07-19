@@ -247,7 +247,7 @@ button.trigger:focus {
 
   .name__intro p {
     font-size: 220%;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .name__info {
@@ -256,7 +256,7 @@ button.trigger:focus {
   }
 
   .name-given {
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     font-size: 470%;
   }
 }
@@ -264,10 +264,6 @@ button.trigger:focus {
 @media (max-width: 525px) {
   .name_tag {
     margin: auto;
-  }
-
-  .name__intro p {
-    padding-bottom: 15px;
   }
 
   .name-given {
@@ -339,7 +335,9 @@ button.trigger:focus {
 }
 
 .resume h1 {
+  margin-bottom: 0.25em;
   font-size: 2.8125rem;
+  line-height: 1;
 }
 
 .resume h3 {
@@ -445,6 +443,10 @@ button.trigger:focus {
 
   .resume section {
     padding: 0;
+  }
+
+  .resume h1 {
+    margin-bottom: 0.15em;
   }
 
   .skills__list div {

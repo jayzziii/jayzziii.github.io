@@ -1,21 +1,3 @@
-let changeGreet = window.document.querySelector(".name__intro h1");
-let changeName = window.document.querySelector(".name-given");
-window.addEventListener("resize", function () {
-  if (window.innerWidth <= 319) {
-    changeGreet.innerHTML = "Hi";
-  } else if (window.innerWidth >= 320) {
-    changeGreet.innerHTML = "Hello";
-  }
-});
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth <= 525) {
-    changeName.innerHTML = "JC";
-  } else if (window.innerWidth >= 526) {
-    changeName.innerHTML = "Julian Cris";
-  }
-});
-
 let windowWidth = document.documentElement.clientWidth;
 document.addEventListener(
   "keydown",
