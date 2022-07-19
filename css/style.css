@@ -238,6 +238,7 @@ button.trigger:focus {
 
   .name-tag {
     width: min-content;
+    height: min-content;
   }
 
   .name__intro {
