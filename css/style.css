@@ -7,7 +7,7 @@
 }
 
 :focus {
-  outline: 2px solid hsl(0, 0%, 0%);
+  outline: 2px solid hsl(0 0% 0%);
 }
 
 body {
@@ -34,7 +34,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(0, 0%, 100%);
+  background: hsl(0 0% 100%);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -114,7 +114,7 @@ button.trigger:focus {
 
 .intro-effect-push .resume>div {
   margin-top: 50px;
-  color: hsl(240, 10%, 73%);
+  color: hsl(240 10% 73%);
 }
 
 .intro-effect-push>.name-tag,
@@ -153,15 +153,15 @@ button.trigger:focus {
   margin: auto;
   margin-top: 0;
   border-radius: 10px;
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0 100% 50%);
   line-height: 1;
   text-align: center;
-  filter: drop-shadow(0 0 15px hsl(0, 100%, 50%));
+  filter: drop-shadow(0 0 15px hsl(0 100% 50%));
 }
 
 .name__intro {
   padding: 1em;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0 0% 100%);
   font-family: "Poppins", cursive;
   text-transform: uppercase;
 }
@@ -182,8 +182,8 @@ button.trigger:focus {
   margin: auto;
   padding: 2em;
   border-radius: 10px;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 0%);
+  background-color: hsl(0 0% 100%);
+  color: hsl(0 0% 0%);
   font-family: "Gochi Hand", cursive;
 }
 
@@ -207,7 +207,7 @@ button.trigger:focus {
 }
 
 .name-social i {
-  color: hsl(0, 0%, 0%);
+  color: hsl(0 0% 0%);
   font-size: 3.125rem;
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
@@ -216,19 +216,19 @@ button.trigger:focus {
 }
 
 .name-social .fa-linkedin:hover {
-  color: hsl(199, 100%, 35%);
+  color: hsl(199 100% 35%);
 }
 
 .name-social .fa-github:hover {
-  color: hsl(0, 0%, 20%);
+  color: hsl(0 0% 20%);
 }
 
 .name-social .fa-behance-square:hover {
-  color: hsl(228, 12%, 8%);
+  color: hsl(228 12% 8%);
 }
 
 .name-social .fa-instagram:hover {
-  color: hsl(232, 63%, 57%);
+  color: hsl(232 63% 57%);
 }
 
 @media (max-width: 767px) {
@@ -529,8 +529,8 @@ button.trigger:focus {
   top: 0;
   left: 0;
   padding: 20px;
-  background: hsl(210, 30%, 25%);
-  border: 5px solid hsl(0, 0%, 0%);
+  background: hsl(210 30% 25%);
+  border: 5px solid hsl(0 0% 0%);
   height: 100%;
   width: 100%;
 }
@@ -558,8 +558,8 @@ button.trigger:focus {
 }
 
 .gallery.soon figure {
-  background: hsl(0, 0%, 20%);
-  color: hsl(0, 0%, 100%);
+  background: hsl(0 0% 20%);
+  color: hsl(0 0% 100%);
 }
 
 .gallery.soon p {
@@ -573,26 +573,26 @@ button.trigger:focus {
   display: block;
   margin-bottom: 0.3rem;
   padding: 0.5rem 1rem;
-  border: 1px solid hsl(0, 0%, 0%);
+  border: 1px solid hsl(0 0% 0%);
   text-align: center;
 }
 
 .btn-light {
   left: 20px;
-  background: hsl(0, 0%, 60%);
-  color: hsl(0, 0%, 0%);
+  background: hsl(0 0% 60%);
+  color: hsl(0 0% 0%);
 }
 
 .btn-dark {
   right: 20px;
-  background: hsl(0, 0%, 10%);
-  color: hsl(0, 0%, 100%);
+  background: hsl(0 0% 10%);
+  color: hsl(0 0% 100%);
 }
 
 .btn-dark:hover,
 .btn-light:hover {
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 0%);
+  background: hsl(0 0% 100%);
+  color: hsl(0 0% 0%);
 }
 
 @media (max-width: 768px) {
