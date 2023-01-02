@@ -18,10 +18,9 @@ body {
 header {
   display: -ms-grid;
   display: grid;
-  /* place-items: center; */
   place-content: center;
   position: relative;
-  width: 100%;
+  min-width: calc(100% + 2rem);
   min-height: 100vh;
   margin: 0 auto;
   /* padding: 3em auto 0; */
