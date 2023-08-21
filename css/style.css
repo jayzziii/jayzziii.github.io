@@ -196,12 +196,11 @@ button.trigger:focus {
   list-style: none;
 }
 
-.name-social li {
+.name-social :where(li, a) {
   display: inline-block;
 }
 
 .name-social a {
-  display: inline-block;
   padding: 0 20px;
 }
 
