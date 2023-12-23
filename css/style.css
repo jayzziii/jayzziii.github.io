@@ -21,18 +21,19 @@ header {
   place-content: center;
   position: relative;
   min-width: calc(100%);
-  min-height: 100vh;
-  margin: 0 auto;
+  min-height: 100svh;
+  margin: auto;
   /* padding: 3em auto 0; */
 }
 
 .bg {
   position: absolute;
   overflow: hidden;
-  top: 0;
+  /* top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
+  inset: 0;
   background: hsl(0 0% 100%);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -201,7 +202,7 @@ button.trigger:focus {
 }
 
 .name-social a {
-  padding: 0 20px;
+  padding-inline: 20px;
 }
 
 .name-social i {
@@ -275,7 +276,7 @@ button.trigger:focus {
   }
 
   .name-social a {
-    margin: 0 5px;
+    margin-inline: 5px;
   }
 }
 
@@ -305,7 +306,7 @@ button.trigger:focus {
   }
 
   .name-social a {
-    margin: 0 1%;
+    margin-inline: 1%;
   }
 
   button.trigger {
@@ -317,9 +318,9 @@ button.trigger:focus {
 .resume {
   display: -ms-grid;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
   display: -ms-grid;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-areas:
     "name photo"
     "work objective"
@@ -328,7 +329,7 @@ button.trigger:focus {
   gap: 2em;
   padding: 2em;
   width: auto;
-  max-width: 80vw;
+  max-width: 80svw;
   margin: auto;
 }
 
@@ -369,7 +370,7 @@ button.trigger:focus {
 }
 
 #contact__details {
-  padding: 25px 0;
+  padding-block: 25px;
 }
 
 .resume__body,
@@ -467,14 +468,14 @@ button.trigger:focus {
 
 /* PORTFOLIO */
 .portfolio_container {
-  width: 80vw;
+  width: 80svw;
   overflow: hidden;
-  margin: 0 auto;
+  margin: auto;
   font-family: "Eb Garamond", sans-serif;
 }
 
 .portfolio_container h2 {
-  padding: 50px 0;
+  padding-block: 50px;
   font-size: 3.125rem;
   font-weight: bold;
   text-align: center;
