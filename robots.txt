@@ -34,6 +34,10 @@ User-agent: CACTVS Chemistry Spider
 Disallow: *
 User-agent: Cassandra
 Disallow: *
+User-agent: CCBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
 User-agent: Digimarc Marcspider/CGI
 Disallow: *
 User-agent: ChristCrawler.com
@@ -84,8 +88,12 @@ User-agent: GetURL
 Disallow: *
 User-agent: Golem
 Disallow: *
+User-agent: Google-Extended
+Disallow: /
 User-agent: Grapnel/0.01 Experiment
 Disallow: *
+User-agent: GPTBot
+Disallow: /
 User-agent: Harvest
 Disallow: *
 User-agent: havIndex
@@ -154,6 +162,8 @@ User-agent: ParaSite
 Disallow: *
 User-agent: The Peregrinator
 Disallow: *
+User-agent: PerplexityBot
+Disallow: /
 User-agent: Phantom
 Disallow: *
 User-agent: PiltdownMan
