@@ -230,7 +230,7 @@ button.trigger:focus-visible {
   color: hsl(232 63% 57%);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* header {
     padding: 25px 0;
   } */
@@ -260,7 +260,7 @@ button.trigger:focus-visible {
   }
 }
 
-@media (max-width: 525px) {
+@media screen and (max-width: 525px) {
   .name_tag {
     margin: auto;
   }
@@ -280,7 +280,7 @@ button.trigger:focus-visible {
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .name__intro h1 {
     font-size: 315%;
   }
@@ -425,7 +425,7 @@ button.trigger:focus-visible {
   background-color: #007bb5;
 } */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .resume {
     grid-template-columns: 100%;
     grid-template-areas:
@@ -452,7 +452,7 @@ button.trigger:focus-visible {
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .resume h1 {
     font-size: 200%;
   }
@@ -592,7 +592,7 @@ button.trigger:focus-visible {
   color: hsl(0 0% 0%);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .gallery,
   .gallery img,
@@ -606,7 +606,7 @@ button.trigger:focus-visible {
   }
 }
 
-@media (max-width: 525px) {
+@media screen and (max-width: 525px) {
   .gallery.grid figure img {
     filter: blur(2px);
   }
@@ -630,7 +630,7 @@ button.trigger:focus-visible {
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .portfolio_container h2 {
     font-size: 210%;
   }
